@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEENI | Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js\gsap-public\minified\gsap.min.js">
+        
+    </script>
+</head>
+<body class="home" >
+    <div class="wrapper">
+            <!--MENU-->
+            <nav class="menu">
+                <div class="menu_logo">
+                    <a href="index.html"><img src="LOGO_AEENI-ENI/771e1e.png" alt="logo" id="logo"></a>
+                </div>
+                <div class="menu_items">
+                    <!--<div class="menu_items-link active">
+                        <a href="clubs.html">Clubs</a>
+                    </div>
+                    <div class="menu_items-link">
+                        <a href="partners.html">Partenaires</a>
+                    </div>-->
+                    <div class="menu_items-link">
+                        <a href="about.html">A propos</a>
+                    </div>
+                </div>
+            </nav>
+    
+        <div class="container">
+            <div class="container_item container_item-header">
+                <h1>The change is <br> <div class="now">NOW.</div></h1>
+            </div>
+            <div class="container_item container_item-1">
+                <h1 class="container_item-title">
+                    <a href="events.html">Évènements</a>
+                </h1>
+            </div>
+            <div class="container_item container_item-2">
+                <h1 class="container_item-title">
+                    <a href="activities.html">Activités</a>
+                </h1>
+            </div>
+        </div> 
+    </div>
+
+    <script src="js\horizontal-scroll-1.1.0\package\dist\index.js"></script>
+		<script>
+
+			var blocks = document.getElementsByClassName('container_item');
+			var container = document.getElementsByClassName('container');
+			var hs = new HorizontalScroll.default({
+				blocks : blocks,
+				container: container,
+				isAnimated: true,
+				springEffect: 0.8,
+			});
+        </script>    
+</body>
+</html>

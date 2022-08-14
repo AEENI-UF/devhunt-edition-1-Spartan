@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'Monument';
+    src: url('fonts/MonumentExtended-Regular.otf');
+}
+@font-face {
+    font-family: 'GrandSlang';
+    src: url('fonts/GrandSlang-Roman.otf');
+}
+
+*{
+    margin:0;
+    padding:0;
+
+}
+#logo{
+    height:125px;
+    width: 100%;
+    margin-top: 0;
+}
+body{
+    background-image: linear-gradient(rgba(231,231,231,0.8),rgba(231,231,231,0.8)),url('images/etab.jpg');
+    background-size: cover;
+
+    /*background-color: rgb(231,231,231);*/
+    font-family: Monument;
+}
+.home{
+    overflow: hidden;
+}
+nav{
+    position:fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+.menu_logo, 
+.menu_items-link{
+    padding: 35px;
+}
+
+.menu_items{
+    display: flex;
+}
+.menu_items-link a{
+    color: rgb(49, 49, 49);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.25s all ease-in-out;
+}
+.menu_items-link a:hover{
+    color: #771e1e;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-transform: uppercase;
+    transition: 0.25s all ease-in-out;
+}
+/*.menu_items-link.active a{
+    text-decoration: underline;
+
+}*/
+.container{
+    margin-top: 150px;
+    margin-left: 50px;
+}
+.container_item{
+    position:relative;
+    width: 540px;
+    height: 360px;
+    margin: 50px 500px 20px 80px;
+    
+}
+.container_item-header h1{
+    position: relative;
+    left:40px;
+    width:600px;
+    height:360px;
+    color: #771e1e;
+    font-size: 60px !important;
+    
+
+}
+.now{
+    font-size: 90px;
+    font-family: GrandSlang;
+}
+.container_item-title a{
+    color: #c27f7f;
+    text-decoration: none;
+    font-family: GrandSlang;
+}
+.container_item h1{
+    position: absolute;
+    left:40px;
+    bottom: -40px;
+    color:#771e1e;
+    font-size: 50px;
+}
+
+.container_item-1{
+    background: url(images/events_banner.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.container_item-2{
+    background: url(images/act_banner.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+@media(max-width: 900px){
+    .project_container-title h1{
+        font-size: 40px;
+    }
+    .project_container{
+        width: 80%;
+    }
+    .project_container-images{
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    .project_image{
+        width: 90%;
+
+    }
+    .project_image-one, .project_image-two, .project_image-three, .project_image-four{
+        position: relative;
+        top:0;
+        left: 0;
+
+    }
+    .container_item{
+        width:300px;
+        height:200px;
+        margin: 50px 100px 20px 80px;
+    }
+
+    .container_item-header h1{
+        font-size: 30px !important;
+        left: -50%;
+    }
+
+    .container_item h1{
+        font-size: 40px;
+        bottom: -20px;
+
+    }
+}
+
+.project_container{
+    width: 70%;
+    margin: 100px auto;
+    color:#771e1e;
+    padding: 120px 40px;
+    text-align: center;
+
+}
+.project_container-title h1{
+    color: #771e1e;
+    font-family: GrandSlang;
+    font-size: 120px;
+}
+.project_container-subtitle{
+    margin: 20px 0;
+    font-family: Monument;
+    font-size: 16px;
+}
+.project_container-images{
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    padding: 40px 0; 
+
+}
+.project_image{
+    width: 600px;
+    height: 500px;
+    margin: 40px auto;
+}
+/*IMAGE START----------------------------------------------------------------------*/
+    /*Event*/
+.project_image-one{
+    background: url(images/events/event_match_inter.JPG) no-repeat 50% 50%;
+    background-size: cover;
+}
+.project_image-two{
+    position: relative;
+    top: -100px;
+    left: -250px;
+    background: url(images/events/forum.JPG) no-repeat 50% 50%;
+    background-size: cover;
+}
+.project_image-three{
+    position: relative;
+    left: 300px;
+    background: url(images/events/rising_newbies_contest.JPG) no-repeat 50% 50%;
+    background-size: cover;
+}
+.project_image-four{
+    position: relative;
+    top: -200px;
+    left: -100px;
+    background: url(images/events/intern_hackathon-2.JPG) no-repeat 50% 50%;
+    background-size: cover;
+}
+    /*Activities*/
+    .project_image-five{
+        background: url(images/activities/act_match_inter-two.JPG) no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .project_image-six{
+        position: relative;
+        top: -100px;
+        left: -250px;
+        background: url(images/activities/act_match_inter.JPG) no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .project_image-seven{
+        position: relative;
+        left: 300px;
+        background: url(images/activities/choir-one.JPG) no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .project_image-eight{
+        position: relative;
+        top: -200px;
+        left: -100px;
+        background: url(images/activities/choir-2.JPG) no-repeat 50% 50%;
+        background-size: cover;
+    }    
+
+
+/*IMAGE END------------------------------------------------------------------------*/
+
+.anime-js-title.letter{
+    display: inline-block;
+    line-height: 1em;
+} 
+
